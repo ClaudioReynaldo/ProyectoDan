@@ -1,0 +1,191 @@
+/* Variables de colores */
+:root {
+  --main-color: #e0e0e0;
+  --primary-button: #43a047;
+  --primary-button-hover: #2f6e32;
+  --navbar-footer: #0b1121;
+
+  /* Nuevas variables para las tarjetas */
+  --card-bg-color: #33691e;
+  --card-text-color: #ffffff;
+  --card-border-color: #81c784;
+  --card-hover-bg: #1b5e20;
+  --card-hover-text: #a5d6a7;
+}
+
+/* Header */
+.login-container {
+  max-width: 400px;
+  margin-top: 5rem;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #000;
+  display: inline-block;
+}
+
+.navbar-collapse a {
+  color: white;
+}
+
+.navbar-collapse a:hover {
+  color: rgb(247, 134, 5);
+  font-weight: bold;
+  text-shadow: 0 0 0.5px white;
+}
+
+/* Main */
+.main-color {
+  background-color: var(--main-color);
+}
+
+.card-text {
+  max-height: 4.5rem;
+  /* Ajusta la altura según sea necesario */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* Número de líneas que deseas mostrar */
+  -webkit-box-orient: vertical;
+}
+
+/* blog-emprendedores-comisw9/css/style.css */
+.card {
+  width: 100%;
+  /* Asegura que las tarjetas ocupen el 100% del ancho disponible */
+  max-width: 250px;
+  /* Limita el ancho máximo de las tarjetas */
+  margin: 0 auto;
+  margin-bottom: 10px;
+  /* Centra las tarjetas horizontalmente */
+}
+
+@media (max-width: 768px) {
+  .col-10 {
+    flex: 0 0 100%;
+    /* Hace que las columnas ocupen el 100% en pantallas pequeñas */
+    max-width: 100%;
+    /* Asegura que no excedan el ancho disponible */
+  }
+}
+
+.navbar-footer {
+  background-color: var(--navbar-footer);
+}
+
+/* FORMULARIO */
+.btn-search {
+  color: var(--primary-button);
+}
+
+.btn-search:hover {
+  color: var(--main-color);
+  background-color: var(--primary-button-hover);
+}
+
+.form-shadow {
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+}
+
+/* CATEGORIAS */
+.categorias button {
+  background-color: var(--primary-button);
+  transition: transform 0.3s ease-in-out;
+}
+
+.categorias button:hover {
+  background-color: var(--primary-button-hover);
+  transform: scale(1.1);
+}
+
+.categorias button {
+  width: 50%;
+}
+
+/* ANUNCIO */
+.publicidad button {
+  background-color: var(--primary-button);
+  padding: 7px;
+  font-size: 1.2rem;
+  width: 50%;
+  left: 50%;
+  top: 87%;
+}
+
+.publicidad button:hover {
+  background-color: var(--primary-button-hover);
+}
+
+/* Columa Tarjetas */
+
+.single-card {
+  background-color: var(--card-bg-color);
+  color: var(--card-text-color);
+  border: 2px solid var(--card-border-color);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.single-card:hover {
+  background-color: var(--card-hover-bg);
+  color: var(--card-hover-text);
+  transform: scale(1.05);
+  cursor: pointer;
+  border-color: rgba(255, 255, 255, 0.8); /* Cambia el borde al hover */
+}
+
+/* INICIO ESTILOS PAGINA CARD1, CARD2 Y CARD3 */
+.form {
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.486);
+}
+.form-control:focus {
+  border-color: #43a047;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+.form-check-input:focus {
+  border-color: #43a047;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+.form-check-input:checked {
+  background-color: #43a047;
+  border-color: rgba(76, 175, 80, 0.5);
+}
+.btn-custom {
+  background-color: #43a047;
+  color: white;
+  &:hover {
+    background-color: #2f6e32;
+    color: white;
+  }
+}
+.btn-custom:focus {
+  background-color: #43a047;
+}
+
+/* COMENTARIOS */
+
+.comentarios img {
+  height: 64px;
+  width: 64px;
+}
+.col-img img {
+  width: 60%;
+}
+/* FIN ESTILOS PAGINA CARD1, CARD2 Y CARD3 */
